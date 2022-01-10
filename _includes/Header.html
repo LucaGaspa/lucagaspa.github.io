@@ -1,0 +1,83 @@
+{%- comment -%}
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* File: Header.html
+* Author Raghuveer S, Hiran Venugopalan
+*
+* This file contains the markup for the context menu thingy you see when you right
+* click on the post titles on the home page.
+*
+{%- endcomment -%}
+
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../index.html">
+        <svg  width="32" height="32" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-reader" class="svg-inline--fa fa-book-reader fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"></path></svg>
+        <h4 style="margin-left: 12px">Luca Gasparetto</h4>  
+      </a>
+      <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+        <div class="buttons">
+          <a class="button is-text">
+            <span class="icon is-small">
+              <img src="../assets/img/sun.svg" id="theme-toggle-img--mobile">
+            </span>
+          </a>
+        </div>
+      </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <!-- <a href="../posts/how-to"  class="navbar-item">
+          How To
+        </a> -->
+        <a href="../notes" class="navbar-item">
+          Articles
+        </a>
+        <a href="https://github.com/lucagaspa" target="_blank" class="navbar-item">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/luca-gasparetto/" target="_blank"  class="navbar-item">
+          LinkedIn
+        </a>
+      </div>
+      <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-text">
+              <span class="icon is-small">
+                <img src="../assets/img/sun.svg" id="theme-toggle-img">
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="/assets/js/Hamburger.js"></script>
+
