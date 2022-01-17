@@ -17,7 +17,7 @@ To complete the later implementation, I end up with two basic utilities, inspire
 
 ### Create a blob
 
-Active Storage expects the following post request:
+Active Storage expects the following POST request:
 
 ```bash
 POST /rails/active_storage/direct_uploads HTTP/1.1
